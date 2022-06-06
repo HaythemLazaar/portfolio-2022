@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="742" height="1002" viewBox="0 0 742 1002">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+        stroke: #2d2d2d;
+        font-size: 1000px;
+        font-family: MajorMonoDisplay-Regular, Major Mono Display;
+      }
+    </style>
+  </defs>
+  <text id="H" class="cls-1" transform="translate(1 901)"><tspan x="0" y="0">H</tspan></text>
+</svg>
