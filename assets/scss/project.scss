@@ -121,30 +121,57 @@ nav{
     visibility: hidden;
 }
 
-.projects{
-    .prj-title{
-        color: $orange;
-        margin-top: 100px;
-        text-align: center;
-    }
-    .project-section{
-        height: 60vh;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        padding: 30px;
-        h2{
-            text-align: center;
-        }
-        .prj-img{
-            max-width: 300px;
-            display: none;
-        }
-    }
+.project-header{
+    color: $orange;
+    margin-top: 100px;
+    text-align: center;
 }
 
+.project-name{
+    text-align: center;
+}
 
+.project-pres{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    h1{
+        text-align: center;
+    }
+    .pres>img{
+        width: 100%;
+        max-width: 800px;
+        height: auto;
+    }
+    p{
+        font-family: "Roboto", sans-serif;
+        line-height: 135%;
+    }
+    a{
+        color: $orange;
+        font-family: "Roboto", sans-serif;
+    }
+    .git-link, .live-link{
+        display: flex;
+        width: 100%;
+        img{
+            width: 49.58px;
+            padding-right: 10px;
+        }
+        
+    }
+    .live{
+        color: #00A014;
+        font-family: "Roboto", sans-serif;
+        padding-right: 10px;
+        visibility: visible;
+    }
+    .project-desc{
+        align-self: flex-start;
+        width: 100%;
+        padding: 20px;
+    }
+}
 
 
 @media screen and (max-width: 320px){
@@ -223,7 +250,7 @@ nav{
         .whtsup{
             margin: 0 0 0.5rem 120px;
             color: $light-grey;
-            font-size: 7rem;
+            font-size: 5rem;
         }
 
         div:hover{
@@ -349,49 +376,24 @@ nav{
         font-size: 20px;
     }
 
-    .project-section{
-        margin-top: 50px;
+
+    .project-header{
+        font-size: 6vw;
+        margin: 0 0 0 120px;
+        text-align: left;
     }
 
-    .projects{
-        .prj-title{
-            font-size: 6vw;
-            margin: 0 0 0 120px;
-            text-align: left;
-        }
-        h2{
-            font-size: 2.5rem;
-        }
-        
-        .project{
-            display: flex;
-            position: relative;
-            justify-content: center;
-            flex-direction: row;
-            a:hover{
-                color: $orange;
-                position: relative;  
-            }
-            h2{
-                z-index: 4;
-            }
-            cursor: pointer;
-        }
-        .project:hover{
-            color: $orange;
-            .prj-img{
-                display: block;
-                position: absolute;
-                max-width: 700px;
-                z-index: 2;
-                align-self: center;
-                left: 50%;
-                opacity: 50%;
-            }
-        }
-        
-        
+    .project-name{
+        text-align: left;
+        margin-left: 120px;
     }
 
+    .project-pres{
+        margin: 160px;
+    }
+
+    .project-desc{
+        padding: 40px;
+    }
 }
 

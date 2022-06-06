@@ -30,6 +30,7 @@ body,
 html{
     margin: 0;
     padding: 0;
+    max-width: initial;
     overflow-x: hidden;
 }
 
@@ -96,6 +97,7 @@ body{
     animation: fade-in 10ms forwards;
     -webkit-animation-delay: 500ms;
     animation-delay: 500ms;
+    display: none;
 }
 
 nav{
@@ -153,6 +155,7 @@ nav{
     flex-direction: column;
     padding: 18vh 1rem 0 1rem;
     img{
+        display: none;
         position: absolute;
         visibility: hidden;
     }
@@ -232,6 +235,7 @@ nav{
             color: $orange;
         }
         .about-desc{
+            font-family: 'Roboto', sans-serif;
             text-align: center;
             font-size: 16px;
             max-width: 600px;
@@ -420,6 +424,7 @@ nav{
         align-items: flex-end;
         justify-content: flex-end;
         img{
+            display: block;
             visibility: visible;
             top: -30%;
             left: 5vw;
