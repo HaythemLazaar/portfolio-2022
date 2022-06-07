@@ -438,6 +438,7 @@ nav{
         .header-screen{
             position: relative;
             visibility: visible;
+            padding: 0 20px 20px 0;
         }
         h1{
             text-align: right;
@@ -448,6 +449,7 @@ nav{
         }
         h3{
             align-self: flex-end;
+            padding-right: 22px
         }
         .cnt-btn{
             font-size: 1vw;
@@ -623,5 +625,11 @@ nav{
 @media screen and (min-width: 1600px){
     body{
         font-size: 1.5rem;
+    }
+
+    .hero-section{
+        h1{
+            max-width: 1800px;
+        }
     }
 }
