@@ -6,11 +6,13 @@ function changeClass(){
             menus[i].classList.remove('activated');
             menus[i].classList.add('deactivated');
             document.getElementById("act-btn").src = "assets/img/HAMBURGER.svg";
+            document.getElementById("act-btn1").src = "assets/img/HAMBURGER.svg";
         }
         else{
             menus[i].classList.remove('deactivated');
             menus[i].classList.add('activated');
             document.getElementById("act-btn").src = "assets/img/X.png";
+            document.getElementById("act-btn1").src = "assets/img/X.png";
             console.log("Active");
         }
     }
