@@ -123,25 +123,31 @@ nav{
 
 .project-header{
     color: $orange;
-    margin-top: 100px;
+    margin-top: 140px;
     text-align: center;
 }
 
 .project-name{
     text-align: center;
+    font-size: 1.5rem;
 }
 
 .project-pres{
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin: 10px;
     h1{
         text-align: center;
     }
     .pres>img{
         width: 100%;
-        max-width: 800px;
+        max-width: 350px;
         height: auto;
+        border: 2px solid black;
+        box-shadow: 10px 10px 0px 0px rgba(208,120,98,1);
+        -webkit-box-shadow: 10px 10px 0px 0px rgba(208,120,98,1);
+        -moz-box-shadow: 10px 10px 0px 0px rgba(208,120,98,1);
     }
     p{
         font-family: "Roboto", sans-serif;
@@ -153,13 +159,25 @@ nav{
     }
     .git-link, .live-link{
         display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
         width: 100%;
+        height: 100%;
+        padding-right: 20px;
         img{
             width: 49.58px;
             padding-right: 10px;
         }
         
     }
+
+    .links{
+        display: flex;
+        flex-direction: row;
+
+    }
+
     .live{
         color: #00A014;
         font-family: "Roboto", sans-serif;
@@ -173,9 +191,17 @@ nav{
     }
 }
 
+.pres>h1{
+    font-size: 1rem;
+}
 
-@media screen and (max-width: 320px){
-    
+
+@media screen and (min-width: 700px){
+    .project-pres{
+        .pres>img{
+            max-width: 600px;
+        }
+    }
 }
 
 
@@ -386,14 +412,39 @@ nav{
     .project-name{
         text-align: left;
         margin-left: 120px;
+        margin-top: 40px;
+        font-size: 2rem;
     }
 
     .project-pres{
-        margin: 160px;
+        margin: 0 250px;
+        .pres>img{
+            max-width: 800px;
+        }
     }
 
     .project-desc{
         padding: 40px;
     }
+
+    .pres{
+        h1{
+            font-size: 1.5rem;
+        }
+        
+    }
+
+
 }
 
+
+@media screen and (min-width: 1600px){
+    .project-pres{
+        font-size: 1.5rem;
+        .pres{
+            img{
+                max-width: 1600px;
+            }
+        }
+    }
+}

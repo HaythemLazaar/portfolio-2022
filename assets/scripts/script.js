@@ -10,7 +10,7 @@ function changeClass(){
         else{
             menus[i].classList.remove('deactivated');
             menus[i].classList.add('activated');
-            document.getElementById("act-btn").src = "assets/img/X.svg";
+            document.getElementById("act-btn").src = "assets/img/X.png";
             console.log("Active");
         }
     }
