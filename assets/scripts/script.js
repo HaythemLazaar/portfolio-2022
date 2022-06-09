@@ -13,13 +13,37 @@ function changeClass(){
             menus[i].classList.add('activated');
             document.getElementById("act-btn").src = "assets/img/X.png";
             document.getElementById("act-btn1").src = "assets/img/X.png";
-            console.log("Active");
         }
     }
     
 }
 
+const wait = (delay = 0) => new Promise(resolve => setTimeout(resolve, delay));
+
+const setVisible = (elementOrSelector, visible) => 
+  (typeof elementOrSelector === 'string' ? document.querySelector(elementOrSelector) : elementOrSelector)
+    .style.display = visible ? 'block' : 'none';
+
+const fadePage = (elementOrSelector) => 
+    (typeof elementOrSelector === 'string' ? document.querySelector(elementOrSelector) : elementOrSelector)
+        .classList.add("fade");
+
+document.addEventListener('DOMContentLoaded', () => wait(2000).then(() => {
+    console.log('loading');
+    setVisible('.page', true);
+    fadePage(".loading");
+    wait(1000).then(() => 
+        setVisible('.loading',false)
+    );
+    wait(3000).then(()=>
+        fadePage(".ball")
+    );
+    
+}));
+
 window.onload = function(){
     document.getElementById("act-btn1").addEventListener( 'click', changeClass);
     document.getElementById("act-btn").addEventListener( 'touchend', changeClass);
+    
 }
+

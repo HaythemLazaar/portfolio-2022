@@ -13,13 +13,14 @@ function changeClass(){
             menus[i].classList.add('activated');
             document.getElementById("act-btn").src = "../img/X.png";
             document.getElementById("act-btn1").src = "../img/X.png";
-            console.log("Active");
         }
     }
     
 }
 
+
 window.onload = function(){
     document.getElementById("act-btn1").addEventListener( 'click', changeClass);
     document.getElementById("act-btn").addEventListener( 'touchend', changeClass);
 }
+
