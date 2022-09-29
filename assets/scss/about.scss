@@ -363,6 +363,7 @@ nav{
     .about{
         flex-direction: row;
         align-items: center;
+        justify-content: space-evenly;
         margin-left: 100px;
         p{
             max-width: 800px;
