@@ -163,7 +163,7 @@ nav {
 .project-pres .project-desc {
   align-self: flex-start;
   padding: 40px;
-  width: 800px;
+  width: 100%;
 }
 
 .pres > h1 {
@@ -173,9 +173,6 @@ nav {
 @media screen and (min-width: 700px) {
   .project-pres .pres > img {
     max-width: 600px;
-  }
-  .project-pres .project-desc {
-    width: 100%;
   }
 }
 @media screen and (min-width: 1024px) {
@@ -377,6 +374,7 @@ nav {
   }
   .project-desc {
     padding: 40px;
+    width: 1000px;
   }
   .pres h1 {
     font-size: 1.5rem;

@@ -187,7 +187,7 @@ nav{
     .project-desc{
         align-self: flex-start;
         padding: 40px;
-        width: 800px;
+        width: 100%;
     }
 }
 
@@ -200,9 +200,6 @@ nav{
     .project-pres{
         .pres>img{
             max-width: 600px;
-        }
-        .project-desc{
-            width: 100%;
         }
     }
 }
@@ -428,6 +425,7 @@ nav{
 
     .project-desc{
         padding: 40px;
+        width: 1000px;
     }
 
     .pres{
